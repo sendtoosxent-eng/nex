@@ -51,20 +51,20 @@ const PromoBanner = () => {
 
             <div className="text-right">
               <span className="block text-lg text-dark mb-1.5">
-                Foldable Motorised Treadmill
+                Experience the Bold new Titanium look with
               </span>
 
               <h2 className="font-bold text-xl lg:text-heading-4 text-dark mb-2.5">
-                Workout At Home
+                The new iphone 17
               </h2>
 
               <p className="font-semibold text-custom-1 text-teal">
-                Flat 20% off
+                Discounted with 20% off
               </p>
 
               <a
                 href="#"
-                className="inline-flex font-medium text-custom-sm text-white bg-teal py-2.5 px-8.5 rounded-md ease-out duration-200 hover:bg-teal-dark mt-9"
+                className="inline-flex font-medium text-custom-sm text-white bg-orange py-2.5 px-8.5 rounded-md ease-out duration-200 hover:bg-teal-dark mt-9"
               >
                 Grab Now
               </a>

@@ -36,10 +36,10 @@ const CounDown = () => {
             </span>
 
             <h2 className="font-bold text-dark text-xl lg:text-heading-4 xl:text-heading-3 mb-3">
-              Enhance Your Music Experience
+              Considering an iPhone?
             </h2>
 
-            <p>The Havit H206d is a wired PC headphone.</p>
+            <p>Discover the Nexcell difference we have a limited offer ending soon! </p>
 
             {/* <!-- Countdown timer --> */}
             <div
@@ -120,11 +120,11 @@ const CounDown = () => {
             height={482}
           />
           <Image
-            src="/images/countdown/countdown-01.png"
+            src="/images/products/bab-Photoroom.png"
             alt="product"
             className="hidden lg:block absolute right-4 xl:right-33 bottom-4 xl:bottom-10 -z-1"
-            width={411}
-            height={376}
+            width={711}
+            height={676}
           />
         </div>
       </div>

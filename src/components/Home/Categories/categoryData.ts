@@ -1,43 +1,33 @@
 const data = [
   {
-    title: "Televisions",
+    title: "Apple",
     id: 1,
-    img: "/images/categories/categories-01.png",
+    img: "/images/products/appo.png",
   },
   {
-    title: "Laptop & PC",
+    title: "Samsungs",
     id: 2,
-    img: "/images/categories/categories-02.png",
+    img: "/images/products/samsung.png",
   },
   {
-    title: "Mobile & Tablets",
+    title: "Google Pixel",
     id: 3,
-    img: "/images/categories/categories-03.png",
+    img: "/images/products/Made by Google (@madebygoogle) on X-Photoroom.png",
   },
   {
-    title: "Games & Videos",
-    id: 4,
-    img: "/images/categories/categories-04.png",
+    title: "Apple",
+    id: 1,
+    img: "/images/products/appo.png",
   },
   {
-    title: "Home Appliances",
-    id: 5,
-    img: "/images/categories/categories-05.png",
+    title: "Samsungs",
+    id: 2,
+    img: "/images/products/samsung.png",
   },
   {
-    title: "Health & Sports",
-    id: 6,
-    img: "/images/categories/categories-06.png",
-  },
-  {
-    title: "Watches",
-    id: 7,
-    img: "/images/categories/categories-07.png",
-  },
-  {
-    title: "Televisions",
-    id: 8,
-    img: "/images/categories/categories-04.png",
+    title: "Google Pixel",
+    id: 3,
+    img: "/images/products/Made by Google (@madebygoogle) on X-Photoroom.png",
   },
 ];
 
