@@ -1,53 +1,53 @@
 import { Product } from "@/types/product";
 const shopData: Product[] = [
   {
-    title: "Havit HV-G69 USB Gamepad",
+    title: "iPhone 16 , 12/512GB",
     reviews: 15,
     price: 59.0,
     discountedPrice: 29.0,
     id: 1,
     imgs: {
       thumbnails: [
-        "/images/products/product-1-sm-1.png",
-        "/images/products/product-1-sm-2.png",
+        "/images/products/iPhone 16 Case-Photoroom.png",
+        "/images/products/download (1)-Photoroom.png",
       ],
       previews: [
-        "/images/products/product-1-bg-1.png",
-        "/images/products/product-1-bg-2.png",
+        "/images/products/iPhone 16 Case-Photoroom.png",
+        "/images/products/download (1)-Photoroom.png",
       ],
     },
   },
   {
-    title: "iPhone 14 Plus , 6/128GB",
+    title: "iPhone 17 Pro Max , 6/512GB",
     reviews: 5,
     price: 899.0,
     discountedPrice: 99.0,
     id: 2,
     imgs: {
       thumbnails: [
-        "/images/products/product-2-sm-1.png",
-        "/images/products/product-2-sm-2.png",
+        "/images/products/download (2)-Photoroom.png",
+        "/images/products/17PROMAX-BLACK.png",
       ],
       previews: [
-        "/images/products/product-2-bg-1.png",
-        "/images/products/product-2-bg-2.png",
+        "/images/products/download (2)-Photoroom.png",
+        "/images/products/17PROMAX-BLACK.png",
       ],
     },
   },
   {
-    title: "Apple iMac M1 24-inch 2021",
+    title: "iPhone 15 Pro Max , 8/256GB",
     reviews: 5,
     price: 59.0,
     discountedPrice: 29.0,
     id: 3,
     imgs: {
       thumbnails: [
-        "/images/products/product-3-sm-1.png",
-        "/images/products/product-3-sm-2.png",
+        "/images/products/THOMO COMPATIBLE Shockproof Microfiber Resistant-Photoroom.png",
+        "/images/products/download-Photoroom.png",
       ],
       previews: [
-        "/images/products/product-3-bg-1.png",
-        "/images/products/product-3-bg-2.png",
+        "/images/products/THOMO COMPATIBLE Shockproof Microfiber Resistant-Photoroom.png",
+        "/images/products/download-Photoroom.png",
       ],
     },
   },
