@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className="flex items-center gap-14">
                   <div>
                     <h2 className="max-w-[153px] font-semibold text-dark text-xl mb-20">
-                      <a href="#"> iPhone 14 Plus & 14 Pro Max </a>
+                      <a href="#"> iPhone 15 Pro</a>
                     </h2>
 
                     <div>
@@ -37,8 +37,8 @@ const Hero = () => {
                         limited time offer
                       </p>
                       <span className="flex items-center gap-3">
-                        <span className="font-medium text-heading-5 text-red">
-                          $699
+                        <span className="font-medium text-semibol text-red">
+                          ugx 2,900,000
                         </span>
                         <span className="font-medium text-2xl text-dark-4 line-through">
                           $999

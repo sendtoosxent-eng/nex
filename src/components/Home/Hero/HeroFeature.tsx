@@ -4,7 +4,7 @@ import Image from "next/image";
 const featureData = [
   {
     img: "/images/icons/icon-01.svg",
-    title: "Free Delivery",
+    title: "Free Delivery around Kampala",
     description: "For all orders above 2M",
   },
   {

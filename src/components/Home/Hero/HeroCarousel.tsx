@@ -25,7 +25,7 @@ const slides = [
     discount: "25%",
     description:
       "A perfect blend of luxury, performance, and innovation built for creators, professionals, and everyday users.",
-    image: "/images/hero/download-Photoroom.png",
+    image: "/images/iphone-hand.png",
   },
   {
     id: 3,
