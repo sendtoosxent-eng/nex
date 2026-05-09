@@ -243,7 +243,7 @@ const Header = () => {
                       cart
                     </span>
                     <p className="font-medium text-custom-sm text-dark">
-                      ${totalPrice}
+                      ugx:{totalPrice}
                     </p>
                   </div>
                 </button>
