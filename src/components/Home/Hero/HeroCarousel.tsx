@@ -70,7 +70,7 @@ const HeroCarousal = () => {
                       {slide.discount}
                     </span>
 
-                    <span className="text-sm uppercase tracking-widest text-white/80">
+                    <span className="text-sm uppercase tracking-widest text-blue/80">
                       Special Offer
                     </span>
                   </div>
@@ -81,7 +81,7 @@ const HeroCarousal = () => {
                   </p>
 
                   {/* Title */}
-                  <h1 className="mb-6 text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+                  <h1 className="mb-6 text-4xl font-black leading-tight text-blue sm:text-5xl lg:text-6xl">
                     {slide.title}
                   </h1>
 
