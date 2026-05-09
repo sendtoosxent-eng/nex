@@ -22,7 +22,7 @@ const data = [
   {
     title: "Samsungs",
     id: 2,
-    img: "/images/products/samsung.png",
+    img: "/images/products/Samsung.png",
   },
   {
     title: "Google Pixel",
