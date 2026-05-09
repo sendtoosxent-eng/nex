@@ -7,6 +7,7 @@ import BestSeller from "./BestSeller";
 import CounDown from "./Countdown";
 import Testimonials from "./Testimonials";
 import Newsletter from "../Common/Newsletter";
+import Whatsapp from "./Whatsapp/whatsapp";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <CounDown />
       <Testimonials />
       <Newsletter />
+      <Whatsapp/>
     </main>
   );
 };

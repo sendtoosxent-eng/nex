@@ -1,4 +1,5 @@
 import Home from "@/components/Home";
+import NexcellLandingPage from "@/components/Home/NexcellLandingPage";
 
 import { Metadata } from "next";
 
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+    
       <Home />
       
     </>
