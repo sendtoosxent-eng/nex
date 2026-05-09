@@ -17,7 +17,7 @@ export default function Whatsapp() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+    <div className="fixed bottom-3 left-1/2 -translate-x-1/2 z-20">
       {/* CONTAINER */}
       <div className="flex items-center gap-4 bg-white/90 backdrop-blur-xl border border-sky-100 shadow-2xl rounded-full px-4 py-3">
         
