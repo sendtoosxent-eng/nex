@@ -1,7 +1,9 @@
 import { Product } from "@/types/product";
+
 const shopData: Product[] = [
   {
     title: "iPhone 16 , 12/512GB",
+    category: "Phone",
     reviews: 15,
     price: 59.0,
     discountedPrice: 29.0,
@@ -19,6 +21,7 @@ const shopData: Product[] = [
   },
   {
     title: "iPhone 17 Pro Max , 6/512GB",
+    category: "Phone",
     reviews: 5,
     price: 899.0,
     discountedPrice: 99.0,
@@ -36,6 +39,7 @@ const shopData: Product[] = [
   },
   {
     title: "iPhone 15 Pro Max , 8/256GB",
+    category: "Phone",
     reviews: 5,
     price: 59.0,
     discountedPrice: 29.0,
@@ -53,6 +57,7 @@ const shopData: Product[] = [
   },
   {
     title: "iphone 12, 8/256GB",
+    category: "Phone",
     reviews: 6,
     price: 59.0,
     discountedPrice: 29.0,
@@ -70,6 +75,7 @@ const shopData: Product[] = [
   },
   {
     title: "Apple Watch Ultra",
+    category: "Watch",
     reviews: 3,
     price: 99.0,
     discountedPrice: 29.0,
@@ -87,6 +93,7 @@ const shopData: Product[] = [
   },
   {
     title: "iphone 11 , 4/128GB",
+    category: "Phone",
     reviews: 15,
     price: 59.0,
     discountedPrice: 29.0,
@@ -104,6 +111,7 @@ const shopData: Product[] = [
   },
   {
     title: "iPhone 17 Pro 6/512GB",
+    category: "Phone",
     reviews: 15,
     price: 59.0,
     discountedPrice: 29.0,
@@ -121,6 +129,7 @@ const shopData: Product[] = [
   },
   {
     title: "iphone 13  , 8/256GB",
+    category: "Phone",
     reviews: 15,
     price: 59.0,
     discountedPrice: 29.0,
@@ -138,6 +147,7 @@ const shopData: Product[] = [
   },
   {
     title: "Google Pixel 10 , 8/256GB",
+    category: "Phone",
     reviews: 5,
     price: 59.0,
     discountedPrice: 29.0,
@@ -155,6 +165,7 @@ const shopData: Product[] = [
   },
   {
     title: "iPhone 14 Pro Max , 8/256GB",
+    category: "Phone",
     reviews: 5,
     price: 59.0,
     discountedPrice: 29.0,
@@ -170,7 +181,6 @@ const shopData: Product[] = [
       ],
     },
   }
-  
 ];
 
 export default shopData;

@@ -1,8 +1,57 @@
+"use client";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const Signin = () => {
+  const router = useRouter();
+const[formData, setFormData] = React.useState({
+  email: "",
+  password: "",
+});
+
+const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+const handleSubmit = async (
+  e: React.FormEvent
+) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("/api/signin", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+
+  // SAVE USER
+  localStorage.setItem(
+    "user",
+    JSON.stringify(data.user)
+  );
+
+  alert("Login successful");
+
+  router.push("/cart");
+} else {
+      alert(data.message);
+    }
+  } catch (error) {
+    console.log(error);
+    alert("Something went wrong");
+  }
+};
   return (
     <>
       <Breadcrumb title={"Signin"} pages={["Signin"]} />
@@ -17,19 +66,20 @@ const Signin = () => {
             </div>
 
             <div>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-5">
                   <label htmlFor="email" className="block mb-2.5">
                     Email
                   </label>
-
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
-                  />
+<input
+  type="email"
+  name="email"
+  id="email"
+  placeholder="Enter your email"
+  value={formData.email}
+  onChange={handleChange}
+  className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+/>
                 </div>
 
                 <div className="mb-5">
@@ -43,6 +93,8 @@ const Signin = () => {
                     id="password"
                     placeholder="Enter your password"
                     autoComplete="on"
+                    value={formData.password}
+                    onChange={handleChange}
                     className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                   />
                 </div>

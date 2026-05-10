@@ -1,8 +1,67 @@
+"use client";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Link from "next/link";
 import React from "react";
 
 const Signup = () => {
+  const [formData, setFormData] = React.useState({
+  name: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+});
+
+const handleChange = (
+  e: React.ChangeEvent<HTMLInputElement>
+) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  });
+};
+
+const handleSubmit = async (
+  e: React.FormEvent
+) => {
+  e.preventDefault();
+
+  if (formData.password !== formData.confirmPassword) {
+    alert("Passwords do not match");
+    return;
+  }
+
+  try {
+    const response = await fetch("/api/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert("Account created successfully");
+
+      setFormData({
+        name: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+      });
+    } else {
+      alert(data.message);
+    }
+  } catch (error) {
+    console.log(error);
+    alert("Something went wrong");
+  }
+};
   return (
     <>
       <Breadcrumb title={"Signup"} pages={["Signup"]} />
@@ -87,7 +146,7 @@ const Signup = () => {
             </span>
 
             <div className="mt-5.5">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-5">
                   <label htmlFor="name" className="block mb-2.5">
                     Full Name <span className="text-red">*</span>
@@ -99,6 +158,8 @@ const Signup = () => {
                     id="name"
                     placeholder="Enter your full name"
                     className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                  value={formData.name}
+                  onChange={handleChange}
                   />
                 </div>
 
@@ -113,6 +174,8 @@ const Signup = () => {
                     id="email"
                     placeholder="Enter your email address"
                     className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -128,6 +191,8 @@ const Signup = () => {
                     placeholder="Enter your password"
                     autoComplete="on"
                     className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                    value={formData.password}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -137,13 +202,15 @@ const Signup = () => {
                   </label>
 
                   <input
-                    type="password"
-                    name="re-type-password"
-                    id="re-type-password"
-                    placeholder="Re-type your password"
-                    autoComplete="on"
-                    className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
-                  />
+  type="password"
+  name="confirmPassword"
+  id="re-type-password"
+  placeholder="Re-type your password"
+  autoComplete="on"
+  className="rounded-lg border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+  value={formData.confirmPassword}
+  onChange={handleChange}
+/>
                 </div>
 
                 <button
