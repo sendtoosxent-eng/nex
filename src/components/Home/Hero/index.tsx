@@ -37,11 +37,11 @@ const Hero = () => {
                         limited time offer
                       </p>
                       <span className="flex items-center gap-3">
-                        <span className="font-medium text-semibol text-red">
-                          ugx 2,900,000
+                        <span className="font-medium text-semibold text-red">
+                          ugx 2,200,000
                         </span>
-                        <span className="font-medium text-2xl text-dark-4 line-through">
-                          $999
+                        <span className="font-small  text-semibold text-dark-4 line-through">
+                          ugx 2,500,000
                         </span>
                       </span>
                     </div>
@@ -61,7 +61,7 @@ const Hero = () => {
                 <div className="flex items-center gap-14">
                   <div>
                     <h2 className="max-w-[153px] font-semibold text-dark text-xl mb-20">
-                      <a href="#"> Wireless Headphone </a>
+                      <a href="#"> iPhone 16 Pro Max </a>
                     </h2>
 
                     <div>
@@ -69,11 +69,11 @@ const Hero = () => {
                         limited time offer
                       </p>
                       <span className="flex items-center gap-3">
-                        <span className="font-medium text-heading-5 text-red">
-                          $699
+                        <span className="font-medium text-semibold text-red">
+                           ugx:4,100,000
                         </span>
-                        <span className="font-medium text-2xl text-dark-4 line-through">
-                          $999
+                        <span className="font-small text-semibold text-dark-4 line-through">
+                          ugx:4,500,000
                         </span>
                       </span>
                     </div>
