@@ -64,7 +64,7 @@ const PromoBanner = () => {
                     Experience the Bold new Titanium look
                   </span>
                   <h2 className="font-bold text-xl lg:text-heading-4 text-dark mb-2.5">
-                    The new iPhone 17
+                    The new iPhone 11 64 GB
                   </h2>
                   <p className="font-semibold text-custom-1 text-teal">
                     Discounted with 20% off
